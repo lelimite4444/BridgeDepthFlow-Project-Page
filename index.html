@@ -109,14 +109,35 @@ We show that our method performs favorably against several state-of-the-art base
 		</p>
                 <figcaption>
 		<p style="text-align:left;">
-		Overall structure of our method. Our framework consists of a single model P that estimates dense correspondence maps based on the order of two input images for both stereo matching and optical flow.
-			Each pair can be fed into P but in a different image order (e.g., (I<sup>l</sup>, I<sup>r</sup>) and (I<sup>r</sup>, I<sup>l</sup>)), and thus two reconstruction loss L<sup>rec</sup> are able to be optimized based on two warping functions W obtained from each pair.
+			Overall structure of our method. Our framework consists of a single model <l>P</l> that estimates dense correspondence maps based on the order of two input images for both stereo matching and optical flow.
+			Each pair can be fed into <l>P</l> but in a different image order (e.g., (<l>I<sup>l</sup></l>, <l>I<sup>r</sup></l>) and (<l>I<sup>r</sup></l>, <l>I<sup>l</sup></l>)), and thus two reconstruction loss <l>L<sub>rec</sub></l> are able to be optimized based on two warping functions <l>W</l> obtained from each pair.
 %
-  Between these two tasks, two difference are: (1) we apply left-right consistency L<sup>lr</sup> to stabilize the stereo matching part only; (2) occlusion map derived from the correspondence maps of two opposite directions is adopted on the reconstruction loss for solving the largely occluded area for optical flow only.
+  Between these two tasks, two difference are: (1) we apply left-right consistency <l>L<sub>lr</sub></l> to stabilize the stereo matching part only; (2) occlusion map derived from the correspondence maps of two opposite directions is adopted on the reconstruction loss for solving the largely occluded area for optical flow only.
 		</p>
 		</figcaption>
 	    </div>
 	</div>
+	
+	<div class="container" id="results">
+            <div class="row">
+		    <h1>Results</h1>
+                
+            </div>
+        </div>
+	
+	<div class="container" id="citation">
+            <div class="row">
+		    <h1>Citation</h1>
+                
+            </div>
+        </div>
+	
+	<div class="container" id="acknowledgement">
+            <div class="row">
+		    <h1>Acknowledgement</h1>
+                
+            </div>
+        </div>
 	
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 	
