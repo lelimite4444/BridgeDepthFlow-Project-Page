@@ -6754,4 +6754,13 @@ button.close {
     display: none !important;
   }
 }
+.authors {
+  color: #222;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
