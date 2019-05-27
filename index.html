@@ -105,11 +105,14 @@ We show that our method performs favorably against several state-of-the-art base
             <div class="row">
 		<h1>Method</h1>
 		<p style="text-align:center;">
-                <img src="images/teaser.png" height="500" style="padding-right:25px;">
+                <img src="images/model.png" height="500" style="padding-right:25px;">
 		</p>
                 <figcaption>
 		<p style="text-align:left;">
-		Using temporally adjacent stereo pairs as input, our model can estimate the correspondence maps of each pair via geometric connections, thus bridging stereo matching and optical flow through multiple reconstruction, forming a cycle.
+		Overall structure of our method. Our framework consists of a single model P that estimates dense correspondence maps based on the order of two input images for both stereo matching and optical flow.
+			Each pair can be fed into P but in a different image order (e.g., (I<sup>l</sup>, I<sup>r</sup>) and (I<sup>r</sup>, I<sup>l</sup>)), and thus two reconstruction loss L<sup>rec</sup> are able to be optimized based on two warping functions W obtained from each pair.
+%
+  Between these two tasks, two difference are: (1) we apply left-right consistency L<sup>lr</sup> to stabilize the stereo matching part only; (2) occlusion map derived from the correspondence maps of two opposite directions is adopted on the reconstruction loss for solving the largely occluded area for optical flow only.
 		</p>
 		</figcaption>
 	    </div>
