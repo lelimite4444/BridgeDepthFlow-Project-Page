@@ -11,6 +11,10 @@ html {
 }
 body {
   margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: #333;
+  font-size: 18px;
 }
 article,
 aside,
