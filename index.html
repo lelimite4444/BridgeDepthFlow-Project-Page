@@ -121,6 +121,16 @@ We show that our method performs favorably against several state-of-the-art base
   Between these two tasks, two difference are: (1) we apply left-right consistency <l>L<sub>lr</sub></l> to stabilize the stereo matching part only; (2) occlusion map derived from the correspondence maps of two opposite directions is adopted on the reconstruction loss for solving the largely occluded area for optical flow only.
 		</p>
 		</figcaption>
+		<p style="text-align:center;">
+                <img src="images/2warp.png" height="500" style="padding-right:25px;">
+		</p>
+                <figcaption>
+		<p style="text-align:left;">
+			The figure above shows the concept of our proposed 2-warp method, which shows the reconstruction by warping functions through the correspondence maps from both stereo matching and optical flow.
+			Depend on the direction of the reconstruction. The 2-warp functions can also be divided into two classes: from stereo to flow and from flow to stereo.
+			As we adopt 2 2-warp functions on our method, there would be 3 variants of our full model.
+		</p>
+		</figcaption>
 	    </div>
 	</div>
 	
